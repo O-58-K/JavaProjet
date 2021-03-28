@@ -2,6 +2,8 @@
 
 Projet Développé en Java par Okan Tosun et Baptiste Marie, 
 
+Le menu du jeu se trouve dans le fichier "Jouer"
+
 Deux modes de jeux sont disponibles dans ce programme tels que : deviner le juste nombre ainsi 
 que l'ordinateur peut également le deviner dans le second mode de jeu
 
