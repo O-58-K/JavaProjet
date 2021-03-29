@@ -1,8 +1,10 @@
 package com.ynov;
 
+import java.util.Scanner;
+
 public class Ordinateur {
 
-	public static java.util.Scanner scanner = new java.util.Scanner(System.in);	
+	public static Scanner scanner = new Scanner(System.in);	
 	
     static char Valeur = '=';
     static char Plus = '+';

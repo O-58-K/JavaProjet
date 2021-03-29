@@ -3,13 +3,15 @@ package com.ynov;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Scanner;
+
 public class Nombre {
 	
 	static int VotreChoix = 0; 							// Ici sera stocké le choix que vous aurez effectué.
 	static int essais = 0; 									// Vous avez le droit à 10 essais maximum, bonne chance !
 	static int DevinezMoi = Random(0000, 5000); 				// Le nombre à deviner est généré ici par l'ordinateur
 
-	public static java.util.Scanner scn = new java.util.Scanner(System.in);	
+	public static Scanner scn = new Scanner(System.in);	
 	
 	public static int Random (int Min, int Max){
 		
