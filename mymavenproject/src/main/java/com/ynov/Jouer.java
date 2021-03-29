@@ -19,7 +19,7 @@ public class Jouer {
 			System.out.println("__________________________________");   // MENU DU JEU
 			System.out.println("| 3 - Quitter le jeu             |");   //
 			System.out.println("__________________________________");   //
-			System.out.println("\n  Veuillez faire un choix :\n\n");    //
+			System.out.println("\n  Veuillez faire un choix :\n");    	//
 			
 			Scanner sc = new Scanner(System.in);
 			choix = sc.nextInt();
@@ -36,7 +36,7 @@ public class Jouer {
 				System.exit(1); 										// Sortie du programme
 				break;
 			default : 													// La valeur saisie est différente des choix proposés donc le menu se réaffiche
-				System.out.println("\nMerci de saisir une ValeurMax entre 1 et 3 :\n");
+				System.out.println("\nMerci de saisir une Valeur entre 1 et 3 :\n");
 				break;
 			}
 			

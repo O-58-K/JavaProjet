@@ -20,25 +20,29 @@ public class Ordinateur {
         char touche = ' ';								// Il s'agit de la valeur permmettant de "guider" l'ordinateur (Les touches à utiliser sont "+", "-" et "=")
         while (touche != Plus && touche != Moins && touche != Valeur)  {
             System.out.print("------------\n");
-            System.out.print("| Indiquez si l'ordinateur se rapproche du résultat : \n");
-            System.out.print("-------------------------------------------------------------\n");
+            System.out.print("| Indiquez si l'ordinateur se rapproche du résultat : ");
             touche = scanner.next().charAt(0);
         }
-        
+                       
         return touche;
     }
     
 	public static int Random (int Min, int Max){ 			// Fonction random qui permet de générer une valeur aléatoire entre une plage de valeurs choisi
 		
-		double result = Math.random();
-		int resultat = (int) (result * (Max - Min + 1)) + Min;
-		return resultat;
+		int resultat = (int)(Math.random() * (Max - Min + 1)) + Min;
+        return resultat;
 	}
 
 	public static int OrdinateurMyst() {
 	        
 	        while (ToucheT != Valeur) { 					// Tant que la valeur donnée par l'utilisateur est différente de '=' exécuter la boucle
 	        
+		        if (essaisNb >= 10) {
+		    		System.out.println("\nL'ordinateur a perdu");
+		    		System.out.println("Avec " + essaisNb + " essais !");
+		    		System.exit(1);
+		        }
+		        
                 if (ToucheT != Plus)
                 {
                     if (ToucheT == Moins) ValeurMax = Nb - 1;          
@@ -66,7 +70,7 @@ public class Ordinateur {
 	        if (ToucheT == Valeur) {
 	    		System.out.println("\nL'ordinateur a réussi à decouvrir le nombre, vous avez perdu !");
 	    		System.out.println("Avec " + essaisNb + " essais !");
-	        }
+	        }	        
 		return essaisNb;
 	}
 
